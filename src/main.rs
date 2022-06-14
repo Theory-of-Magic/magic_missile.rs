@@ -21,7 +21,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .margin(5i32)
         .x_label_area_size(30i32)
         .y_label_area_size(30i32)
-        .build_cartesian_2d(-10.0f64..10.0f64, 0f64..6f64)?; //settings for graph, first two values are start of x and end of x//
+        .build_cartesian_2d(-10.0f64..10.0f64, 0f64..4f64)?; //settings for graph, first two values are start of x and end of x//
     chart.configure_mesh().draw()?;                          //second two are start of y and end of y// 
     chart 
         .draw_series(LineSeries::new(
